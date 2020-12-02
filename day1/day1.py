@@ -1,12 +1,4 @@
-def day1Part1(inputFile):
-    file = open(inputFile)
-
-    lines = []
-    for line in file:
-        lines.append(int(line))
-
-    file.close()
-
+def day1Part1(lines):
     for line in lines:
         index = 0
         for x in range(index, len(lines)):
@@ -14,7 +6,16 @@ def day1Part1(inputFile):
             if result == 2020:
                 return (line * lines[x])
 
-def day1Part2(inputFile):
+def day1Part2(lines):
+    for line in lines:
+        index = 0
+        for x in range(index, len(lines)):
+            for y in range(index+1, len(lines)):
+                result = line + lines[x] + lines[y]
+                if result == 2020:
+                    return (line * lines[x] * lines[y])
+
+def main(inputFile):
     file = open(inputFile)
 
     lines = []
@@ -23,17 +24,9 @@ def day1Part2(inputFile):
 
     file.close()
 
-    for line in lines:
-        index = 0
-        for x in range(index, len(lines)):
-            for y in range(index+1, len(lines)):
-                result = line + lines[x] + lines[y]
-                if result == 2020:
-                    print(result)
-                    return (line * lines[x] * lines[y])
+    print("Part 1: ", day1Part1(lines))
+    print("Part 2: ", day1Part2(lines))
 
 print("Advent of Code: Day 1")
 print("Caleb Morales - clbmrls14")
-
-print("Part 1: ", day1Part1("input.txt"))
-print("Part 2: ", day1Part2("input.txt"))
+main("input.txt")
