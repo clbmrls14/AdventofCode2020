@@ -29,4 +29,4 @@ def main(inputFile):
 
 print("Advent of Code: Day 1")
 print("Caleb Morales - clbmrls14")
-main("input.txt")
+main("input/input.txt")
