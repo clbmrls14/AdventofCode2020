@@ -47,7 +47,7 @@ def main(inputFile):
 
     file.close()
 
-    # print("Part 1:", day2Part1(lines), "valid passwords")
+    print("Part 1:", day2Part1(lines), "valid passwords")
     print("Part 2:", day2Part2(lines), "valid passwords")
 
 print("Advent of Code: Day 1")
