@@ -27,8 +27,6 @@ def day3Part2(lines):
     e = findTrees(lines, 1, 2)
     return a*b*c*d*e
 
-
-
 def main(inputFile):
     file = open(inputFile)
 
