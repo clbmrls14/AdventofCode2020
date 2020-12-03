@@ -50,6 +50,6 @@ def main(inputFile):
     print("Part 1:", day2Part1(lines), "valid passwords")
     print("Part 2:", day2Part2(lines), "valid passwords")
 
-print("Advent of Code: Day 1")
+print("Advent of Code: Day 2")
 print("Caleb Morales - clbmrls14")
 main("input/input.txt")
