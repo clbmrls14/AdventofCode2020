@@ -57,8 +57,6 @@ def getEntries(lines):
             if validFields(entry):
                 entries.append(entry)
             entry = ""
-    # if validFields(entry):
-    #     entries.append(entry)
     return entries
 
 def day4Part1(lines):
